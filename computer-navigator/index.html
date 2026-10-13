@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Navigator 0.2.2</title>
+<style>
+:root { color-scheme: light dark; --bg: #F5F7FA; --card: #FFFFFF; --text: #1B1F23; --muted: #59636E; --accent: #B26A00; --line: #C4CBD3; }
+@media (prefers-color-scheme: dark) { :root { --bg: #161A1D; --card: #23282D; --text: #F5F7FA; --muted: #AAB2BD; --accent: #E3B341; --line: #56616B; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+header { display: flex; align-items: center; gap: 16px; }
+header svg { width: 64px; height: 64px; flex: none; }
+h1 { margin: 0; font-size: 1.9rem; }
+h2 { margin-top: 2rem; font-size: 1.2rem; }
+p.lead { color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 14px 0; }
+a.button { display: inline-block; background: var(--accent); color: #FFFFFF; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all; }
+.muted { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<header>
+<svg viewBox="0 0 256 256" role="img" aria-label="Computer Navigator">
+<rect x="14" y="14" width="228" height="228" rx="58" fill="#FFFFFF" stroke="#B26A00" stroke-width="9"/>
+<circle cx="128" cy="128" r="82" fill="none" stroke="#B26A00" stroke-width="6"/>
+<polygon points="128,58 145,111 198,128 145,145 128,198 111,145 58,128 111,111" fill="#B26A00"/>
+<circle cx="128" cy="128" r="11" fill="#FFFFFF"/>
+</svg>
+
+<div><h1>Computer Navigator</h1><div class="muted">Version 0.2.2, alpha for Windows 11 x64</div></div>
+</header>
+<p class="lead">Lets an AI agent work in a browser and in Windows apps in the background, without taking over your screen or focus and without ever seeing your passwords. Created by Tim Garrity.</p>
+
+<h2>Download</h2>
+<p class="muted">The files are in a OneDrive folder for Microsoft employees. Both buttons open it and ask you to sign in with your Microsoft account; the file names and checksums below tell you which is which.</p>
+<div class="card">
+<p><a class="button" href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Download the installer (.msi)</a></p>
+<p class="muted">Recommended. Per user, no administrator rights.<br>SHA-256 <code>35C2942EF8C14DE008125BED5E0599C7A6F0BC372C9026BE0F455096D8F9926A</code></p>
+</div>
+<div class="card">
+<p><a href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Or download the zip</a></p>
+<p class="muted">SHA-256 <code>A5E3B6E1220EE4BF63DD8BDBA856F786625844AD9384C194D1A3B4E0517B97A2</code></p>
+</div>
+
+<h2>Install</h2>
+<ol>
+<li>Run the .msi, accept the licence, and leave "Open Computer Navigator setup" ticked on the last page.</li>
+<li>Or, for the zip: right-click it, choose Extract All, open the folder, and double-click "Install Computer Navigator".</li>
+<li>In the setup window choose your MCP clients (VS Code, GitHub Copilot CLI, Claude Desktop) and press Set up.</li>
+<li>Restart those clients so they load Computer Navigator.</li>
+</ol>
+<p class="muted">The build is unsigned, so Windows SmartScreen may warn: choose More info, then Run anyway, and check the file against the SHA-256 above.</p>
+
+<h2>Before you rely on it</h2>
+<p class="muted">This is an alpha. It uses its own Edge profile, so you sign in to sites once inside it. Tell Tim Garrity what you were doing when something went wrong. The licence is in the download. Copyright 2026 Tim Garrity.</p>
+</main>
+</body>
+</html>
