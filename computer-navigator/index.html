@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Computer Navigator 0.2.2</title>
+<title>Computer Navigator 0.2.3</title>
 <style>
 :root { color-scheme: light dark; --bg: #F5F7FA; --card: #FFFFFF; --text: #1B1F23; --muted: #59636E; --accent: #B26A00; --line: #C4CBD3; }
 @media (prefers-color-scheme: dark) { :root { --bg: #161A1D; --card: #23282D; --text: #F5F7FA; --muted: #AAB2BD; --accent: #E3B341; --line: #56616B; } }
@@ -30,7 +30,7 @@ code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all
 <circle cx="128" cy="128" r="11" fill="#FFFFFF"/>
 </svg>
 
-<div><h1>Computer Navigator</h1><div class="muted">Version 0.2.2, alpha for Windows 11 x64</div></div>
+<div><h1>Computer Navigator</h1><div class="muted">Version 0.2.3, alpha for Windows 11 x64</div></div>
 </header>
 <p class="lead">Lets an AI agent work in a browser and in Windows apps in the background, without taking over your screen or focus and without ever seeing your passwords. Created by Tim Garrity.</p>
 
@@ -38,11 +38,11 @@ code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all
 <p class="muted">The files are in a OneDrive folder for Microsoft employees. Both buttons open it and ask you to sign in with your Microsoft account; the file names and checksums below tell you which is which.</p>
 <div class="card">
 <p><a class="button" href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Download the installer (.msi)</a></p>
-<p class="muted">Recommended. Per user, no administrator rights.<br>SHA-256 <code>35C2942EF8C14DE008125BED5E0599C7A6F0BC372C9026BE0F455096D8F9926A</code></p>
+<p class="muted">Recommended. Per user, no administrator rights.<br>SHA-256 <code>B29C589B888DC62DE8B32345D70614B2963344744A3C70DDD7F8D955F647DAA1</code></p>
 </div>
 <div class="card">
 <p><a href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Or download the zip</a></p>
-<p class="muted">SHA-256 <code>A5E3B6E1220EE4BF63DD8BDBA856F786625844AD9384C194D1A3B4E0517B97A2</code></p>
+<p class="muted">SHA-256 <code>3B30588182DD772AA2F2054840063044F79FB2C337953E4A39A6AAE2AEB5E8A6</code></p>
 </div>
 
 <h2>Install</h2>
@@ -51,6 +51,8 @@ code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all
 <li>Or, for the zip: right-click it, choose Extract All, open the folder, and double-click "Install Computer Navigator".</li>
 <li>In the setup window choose your MCP clients (VS Code, GitHub Copilot CLI, Claude Desktop) and press Set up.</li>
 <li>Restart those clients so they load Computer Navigator.</li>
+<li>Leave "Open Windows Default Apps" ticked. On the Computer Navigator page that opens, press Set default once: it covers web links and local web pages (.html, .pdf), so they open in Computer Navigator instead of another browser. Windows lets only you make that choice.</li>
+<li>To see the browser yourself at any time, open "Computer Navigator Browser" from the Start menu.</li>
 </ol>
 <p class="muted">The build is unsigned, so Windows SmartScreen may warn: choose More info, then Run anyway, and check the file against the SHA-256 above.</p>
 
