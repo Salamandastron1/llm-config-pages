@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Computer Navigator 0.5.1</title>
+<title>Computer Navigator 0.5.2</title>
 <style>
 :root { color-scheme: light dark; --bg: #F5F7FA; --card: #FFFFFF; --text: #1B1F23; --muted: #59636E; --accent: #B26A00; --line: #C4CBD3; }
 @media (prefers-color-scheme: dark) { :root { --bg: #161A1D; --card: #23282D; --text: #F5F7FA; --muted: #AAB2BD; --accent: #E3B341; --line: #56616B; } }
@@ -30,7 +30,7 @@ code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all
 <circle cx="128" cy="128" r="11" fill="#FFFFFF"/>
 </svg>
 
-<div><h1>Computer Navigator</h1><div class="muted">Version 0.5.1, alpha for Windows 11 x64 and Linux (x64)</div></div>
+<div><h1>Computer Navigator</h1><div class="muted">Version 0.5.2, alpha for Windows 11 x64 and Linux (x64)</div></div>
 </header>
 <p class="lead">Lets an AI agent work in a browser and in Windows apps beside you, on screen where you can watch it and take over, without taking your focus and without ever seeing your passwords. Created by Tim Garrity.</p>
 
@@ -38,15 +38,15 @@ code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all
 <p class="muted">The files are in a OneDrive folder for Microsoft employees. Both buttons open it and ask you to sign in with your Microsoft account; the file names and checksums below tell you which is which.</p>
 <div class="card">
 <p><a class="button" href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Download the installer (.msi)</a></p>
-<p class="muted">Recommended. Per user, no administrator rights.<br>SHA-256 <code>6A73DDB414C1B2C3776DDF074B4174B77FA1B60E78A1356C4E059CA92A1E19BC</code></p>
+<p class="muted">Recommended. Per user, no administrator rights.<br>SHA-256 <code>DE59C3F57C6A044B95CBA9EC50FA7F93FD2A26257EE55ED9DBB344DE04FD9463</code></p>
 </div>
 <div class="card">
 <p><a href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Or download the zip</a></p>
-<p class="muted">The same program, for a terminal install without the wizard (below).<br>SHA-256 <code>57D15988CA10FEC4FF52771A2D55B41D773A2F05F9E7A4346024A8763D0B2CA4</code></p>
+<p class="muted">The same program, for a terminal install without the wizard (below).<br>SHA-256 <code>3AA6852CB6E73F486D10FC771D824AF51DF280EBD00B53EF5BA7DF594EFE3DD9</code></p>
 </div>
 <div class="card">
 <p>Also for <a href="https://microsoft-my.sharepoint.com/:f:/p/tgarrity/IgAqCMU9j57jTbxp5M0ozRz9AZp1Byh3WlSK_fNmufPfEP4">Linux (x64)</a></p>
-<p class="muted">The browser part (other programs' windows are Windows only). Install Microsoft Edge, unpack, then run <code>./ComputerNavigator-0.5.1/install.sh</code>.<br>Linux (x64) SHA-256 <code>F23DD7E5EE52DAC25664F31D4490BE6EDBC7BF10C58668D9622AE68E6C7141FE</code></p>
+<p class="muted">The browser part (other programs' windows are Windows only). Install Microsoft Edge, unpack, then run <code>./ComputerNavigator-0.5.2/install.sh</code>.<br>Linux (x64) SHA-256 <code>2ACA290EFC267BE0CE016A435B17520AF2463AC23A78E687B2364051E38F602E</code></p>
 </div>
 
 <h2>Install</h2>
@@ -62,7 +62,7 @@ code { font-family: Consolas, monospace; font-size: .85em; word-break: break-all
 
 <h2>From a terminal</h2>
 <p class="muted">For developers: the zip holds the same program (<code>app\ComputerNavigator.exe</code>, nothing else to install). Extract it, then in PowerShell:</p>
-<pre class="card"><code>cd .\ComputerNavigator-0.5.1
+<pre class="card"><code>cd .\ComputerNavigator-0.5.2
 powershell -ExecutionPolicy Bypass -File .\Install-ComputerNavigator.ps1 -SkipSetup
 $cn = "$env:LOCALAPPDATA\Programs\ComputerNavigator\ComputerNavigator.exe"
 &amp; $cn setup --non-interactive --clients vscode,copilot,claude
